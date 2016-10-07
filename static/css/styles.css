@@ -159,3 +159,12 @@ a{
 	text-transform: uppercase;
 	text-align: center;
 }
+
+
+/*footer*/
+.footer{
+	padding: 5%;
+	background: #222222;
+	color: #fefefe;
+	text-align: center;
+}
