@@ -1,0 +1,41 @@
+{
+	"shoes" : [
+		
+		{
+			"id" : "01",
+			"name" : "All Stars",
+			"colours" : [
+				{
+					"color1" : "red",
+					"color2" : "navy",
+					"color3" : "white",
+					"color4" : "black"
+				}
+			],
+			"sizes" : [
+				{
+					"range" : "5-13"
+				}
+			]
+		},
+		
+		{
+			"id" : "01",
+			"name" : "All Stars",
+			"colours" : [
+				{
+					"color1" : "red",
+					"color2" : "navy",
+					"color3" : "white",
+					"color4" : "black"
+				}
+			],
+			"sizes" : [
+				{
+					"range" : "5-13"
+				}
+			]
+		}
+
+	]
+}
