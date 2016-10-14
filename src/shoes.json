@@ -1,11 +1,11 @@
 [{
-	"id-1": "01",
+	"id": "01",
 	"name": "All Stars",
 	"colours": "red, blue",
 	"sizes": "large"
 },
 {
-	"id-1": "02",
+	"id": "02",
 	"name": "test",
 	"colours": "red, green",
 	"sizes": "small"

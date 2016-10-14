@@ -8,7 +8,6 @@ with open('shoes.json', 'r') as jsonData:
         with open('shoes.json', "r") as f:
 		shoeName = json.load(f)
 	for i in shoeName:
-		if i['sizes'] == 'large':	
-			print i['sizes']
-	#print shoeName
-
+		if i['id'] == '01':	
+			shoeID = i['id']
+			shoeName = i['name']
