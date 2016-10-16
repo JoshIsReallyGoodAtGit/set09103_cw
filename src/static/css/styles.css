@@ -97,7 +97,9 @@ a{
 
 
 /*other elements*/
-
+.shoe-size-range{
+	color: #424F59;
+}
 /*cards*/
 .card-wrapper{
 	text-align: center;
