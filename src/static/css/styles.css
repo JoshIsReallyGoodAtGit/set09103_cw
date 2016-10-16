@@ -75,6 +75,23 @@ a{
 		margin: 5%;
 	}
 /*sections */
+/*home*/
+
+#index-main{
+    height: 85vh;
+    background: url('https://c1.staticflickr.com/5/4095/4790509812_a11c2c1b09_b.jpg') #424F59;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+    color: #fefefe;
+}
+
+.legible-text{
+    background: #000;
+    padding: 1%;
+    letter-spacing: 2px;
+}
 
 /*media queries (who could forget responsive-ness!) */
 
