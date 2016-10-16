@@ -1,12 +1,12 @@
-[{
-	"id": "01",
-	"name": "All Stars",
-	"colours": "red, blue",
-	"sizes": "large"
-},
 {
-	"id": "02",
-	"name": "test",
-	"colours": "red, green",
-	"sizes": "small"
-}]
+	"0": {
+		"name": "All Stars",
+		"colours": "red, blue",
+		"sizes": "large"
+	},
+	"1": {
+		"name": " All Stars High Tops",
+		"colours": "red, blue",
+		"sizes": "large"
+	}
+}
