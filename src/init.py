@@ -41,10 +41,15 @@ def loadShoeFromJson(shoeID = None):
     shoeColourHandler = {'colours': coloursAvailable}
     
     #size range
-    coloursAvailable = shoeData[shoeID]['colours']
-    shoeColourHandler = {'colours': coloursAvailable}
+    #first size
+    sizeRange1 = shoeData[shoeID]['size-1']
+    sizeRange1Handler = {'size1': sizeRange1}	
 
-    return render_template('shoe-detail.html', shoe = shoeNameHandler, colour = shoeColourHandler)
+   #last size
+    sizeRange2 = shoeData[shoeID]['size-2']
+    sizeRange2Handler = {'size2': sizeRange2}
+
+    return render_template('shoe-detail.html', shoe = shoeNameHandler, colour = shoeColourHandler, size1 = sizeRange1Handler, size2 = sizeRange2Handler)
 
 
 @app.errorhandler(404)
