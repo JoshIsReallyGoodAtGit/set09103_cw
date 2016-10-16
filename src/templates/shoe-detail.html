@@ -2,14 +2,14 @@
 {% block content %}
 <section>
     <div class="jumbotron" id="#shoeID">
-        <h1 class="shoe-heading">Chuck Taylor All Stars</h1>
+        <h1 class="shoe-heading">{{ shoe.shoeName }}</h1>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="section-heading">Original. A True Classic.</h2>
                 <br />
-                <p>The All Stars were made by Chuck Taylor, basketballer. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. </p> 
+                <p>The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. </p> 
             </div>
         </div>
         <div class="row p-t-3">
@@ -21,7 +21,7 @@
             </div>
             <div class="col-xs-6 col-sm-3">
                 <div class="white-cs"></div>
-                <p class="cs-label">White</p>
+                <p class="cs-label">{{ colour.colours }}</p>
             </div>
             <div class="col-xs-6 col-sm-3">
                 <div class="black-cs"></div>
