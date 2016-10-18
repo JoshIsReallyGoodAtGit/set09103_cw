@@ -88,5 +88,95 @@
 		},
 		"lead-desc": "Original. A True Classic.",
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
-	}
+	},
+	"6": {
+		"name": "Chuck Taylor All Star Classic Colours",
+		"category": "High",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "6-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "red",
+			"colour-3": "navy",
+			"colour-4": "black"
+		},
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
+	},
+	"7": {
+		"name": "Chuck II High Top",
+		"category": "High",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "7-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "black",
+			"colour-3": "brown",
+			"colour-4": "null"
+		},
+		"lead-desc": "Classic Chucks Remastered.",
+		"desc": " The Chuck II High Top is the High Top variant of the classic Low Top Shoe. Still cool. Always cool. "
+	},
+	"8": {
+		"name": "Chuck II Boot",
+		"category": "High",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "8-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "black",
+			"colour-3": "brown",
+			"colour-4": "null"
+		},
+		"lead-desc": "Epic Boots.",
+		"desc": " The Chuck II Boot is the leather variant of the Chuck Taylor All Star Classic High Top. "
+	},
+	"9": {
+		"name": "Chuck II Spacer Mesh",
+		"category": "High",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "9-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "black",
+			"colour-3": "brown",
+			"colour-4": "null"
+		},
+		"lead-desc": "Epic Boots.",
+		"desc": " The Chuck Taylor All Star II Spacer Mesh features a new material update sure to catch some attention. The two-toned, breathable spacer mesh delivers a rich, eye-catching aesthetic. The Nike Lunarlon insole provides excellent cushioning, and the super soft micro suede lining and padded non-slip tongue up the comfort level even more.. "
+	},
+	"10": {
+		"name": "Chuck Taylor Stars %amp; Bars",
+		"category": "High",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "10-bg.png",
+		"colours": {
+			"colour-1": "white/red/navy",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "'Murica.",
+		"desc": "Celebrate Independance Day in style. Show everyone just how American-obssessed you are with these High Tops even Abraham Lincoln would be proud of. F*** Yeah!"
+	},
+	"11": {
+		"name": "Chuck Taylor All Star '70 x DC Comics Batman",
+		"category": "High",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "11-bg.png",
+		"colours": {
+			"colour-1": "Black",
+			"colour-2": "Black-Print",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "POW!",
+		"desc": "DC Comics and Converse are celebrating the 30th anniversary of the landmark comic book by Frank Miller, The Dark Knight Returns, with the Chuck Taylor All Star ‘70 x DC Comics Batman Collection. The premium canvas upper, see-through ice outsole, and sockliner capture various artwork from the Batman comic archives over the last 77 years. Special detailing includes an embossed leather Batman logo and Chuck Patch, and a rubber, glow-in-the-dark collectible hangtag."
+	},
 }
