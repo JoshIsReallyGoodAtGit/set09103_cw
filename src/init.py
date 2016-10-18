@@ -15,10 +15,8 @@ def loadBrowse():
 
 @app.route("/allshoes/<name>")
 def loadSpecificCategory(name):
-	#load the lowtops.html file
+	#load the lowtops.html file, this will be changed to the respective page soon enough.
 	return render_template('lowtops.html')
-
-
 
 
 
@@ -48,6 +46,7 @@ def loadShoeFromJson(shoeID = None):
    #last size
     sizeRange2 = shoeData[shoeID]['size-2']
     sizeRange2Handler = {'size2': sizeRange2}
+    #end size range
 
     return render_template('shoe-detail.html', shoe = shoeNameHandler, colour = shoeColourHandler, size1 = sizeRange1Handler, size2 = sizeRange2Handler)
 
@@ -55,7 +54,6 @@ def loadShoeFromJson(shoeID = None):
 @app.errorhandler(404)
 def uhOh(error):
 	return render_template('404.html'), 404
-
 
 
 if __name__ == "__main__":
