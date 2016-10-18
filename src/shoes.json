@@ -1,24 +1,92 @@
 {
 	"0": {
-		"name": "All Stars",
+		"name": "Chuck Taylor All Star Classic Colours",
+		"category": "Low",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "0-bg.png",
 		"colours": {
 			"colour-1": "white",
 			"colour-2": "red",
 			"colour-3": "navy",
 			"colour-4": "black"
 		},
-		"size-1": "3",
-		"size-2": "13"
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"1": {
-		"name": " All Stars High Tops",
+		"name": "Chuck Taylor All Star ‘70",
+		"category": "Low",
+		"size-1": "5",
+		"size-2": "12",
+		"background-img": "1-bg.png",
 		"colours": {
 			"colour-1": "white",
-			"colour-2": "red",
-			"colour-3": "navy",
-			"colour-4": "black"
+			"colour-2": "off-white",
+			"colour-3": "black",
+			"colour-4": "null"
 		},
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
+	},
+	"2": {
+		"name": "Jack Purcell Signature",
+		"category": "Low",
 		"size-1": "5",
-		"size-2": "12"
+		"size-2": "12",
+		"background-img": "2-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "true-navy",
+			"colour-3": "black",
+			"colour-4": "null"
+		},
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
+	},
+	"3": {
+		"name": "Chuck II",
+		"category": "Low",
+		"size-1": "5",
+		"size-2": "12",
+		"background-img": "3-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "navy",
+			"colour-3": "black",
+			"colour-4": "red"
+		},
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
+	},
+	"4": {
+		"name": "Chuck II Shield Canvas",
+		"category": "Low",
+		"size-1": "5",
+		"size-2": "12",
+		"background-img": "4-bg.png",
+		"colours": {
+			"colour-1": "white",
+			"colour-2": "navy",
+			"colour-3": "black",
+			"colour-4": "red"
+		},
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
+	},
+	"5": {
+		"name": "Cons One Star Pro Suede",
+		"category": "Low",
+		"size-1": "5",
+		"size-2": "12",
+		"background-img": "5-bg.png",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Original. A True Classic.",
+		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	}
 }
