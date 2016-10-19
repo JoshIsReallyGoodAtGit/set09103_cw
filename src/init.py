@@ -1,5 +1,4 @@
-from flask import Flask, render_template
-import json
+from flask import Flask, render_template, json
 
 app = Flask("__name__")
 
@@ -9,22 +8,24 @@ def loadIndex():
 
 @app.route("/browse")
 def loadBrowse():
+	#feature idea: load one of the shoes from each category here, instead of hard-coding them
 	return render_template('all-shoes.html')
 
 
-
-@app.route("/allshoes/<name>")
-def loadSpecificCategory(name):
-	#load the lowtops.html file, this will be changed to the respective page soon enough.
-	return render_template('lowtops.html')
-
-
-
+    
+@app.route("/browse/<category>")
+def loadSpecificCategory(category = None, name = None):
+	with open ('shoes.json', 'r') as jsonDataFile:
+		shoes = json.load(jsonDataFile)
+                
+        #THIS IS no longer A FUCKING NIGHTMARE. 
+        return render_template('lowtops.html', category = category, shoes = shoes)
+        
 @app.route("/shoe/id=<shoeID>")
 def loadShoeFromJson(shoeID = None):
     #translate shoeID into a string so we can parse json using it. Honestly so suprised that worked.
     shoeID = "" + shoeID + ""
-    
+
     #load the json file for manipulation
     with open('shoes.json', 'r') as jsonData:
         shoeData = json.load(jsonData)
@@ -37,7 +38,7 @@ def loadShoeFromJson(shoeID = None):
     #shoe colours
     coloursAvailable = shoeData[shoeID]['colours']
     shoeColourHandler = {'colours': coloursAvailable}
-    
+
     #size range
     #first size
     sizeRange1 = shoeData[shoeID]['size-1']
@@ -49,6 +50,10 @@ def loadShoeFromJson(shoeID = None):
     #end size range
 
     return render_template('shoe-detail.html', shoe = shoeNameHandler, colour = shoeColourHandler, size1 = sizeRange1Handler, size2 = sizeRange2Handler)
+
+
+
+
 
 
 @app.errorhandler(404)
