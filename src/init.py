@@ -14,15 +14,15 @@ def loadBrowse():
 
     
 @app.route("/browse/<category>")
-def loadSpecificCategory(category = None, name = None):
+def loadSpecificCategory(category = None):
 	with open ('shoes.json', 'r') as jsonDataFile:
 		shoes = json.load(jsonDataFile)
                 
         #THIS IS no longer A FUCKING NIGHTMARE. 
-        return render_template('lowtops.html', category = category, shoes = shoes)
+        return render_template('category.html', category = category, shoes = shoes)
         
-@app.route("/shoe/id=<shoeID>")
-def loadShoeFromJson(shoeID = None):
+@app.route("/shoe/<category>/<shoeID>")
+def loadShoeFromJson(category = None, shoeID = None):
     #translate shoeID into a string so we can parse json using it. Honestly so suprised that worked.
     shoeID = "" + shoeID + ""
 
@@ -30,29 +30,8 @@ def loadShoeFromJson(shoeID = None):
     with open('shoes.json', 'r') as jsonData:
         shoeData = json.load(jsonData)
         
-    #now we've got the json file, get the exact values for the Shoe
-    #shoe name
-    ShoeName = shoeData[shoeID]['name']
-    shoeNameHandler = {'shoeName': ShoeName}
-    
-    #shoe colours
-    coloursAvailable = shoeData[shoeID]['colours']
-    shoeColourHandler = {'colours': coloursAvailable}
-
-    #size range
-    #first size
-    sizeRange1 = shoeData[shoeID]['size-1']
-    sizeRange1Handler = {'size1': sizeRange1}	
-
-   #last size
-    sizeRange2 = shoeData[shoeID]['size-2']
-    sizeRange2Handler = {'size2': sizeRange2}
-    #end size range
-
-    return render_template('shoe-detail.html', shoe = shoeNameHandler, colour = shoeColourHandler, size1 = sizeRange1Handler, size2 = sizeRange2Handler)
-
-
-
+        name = shoeData[shoeID]['name']
+    return render_template('shoe-detail.html', category = category, shoeID = shoeID, name=name)
 
 
 
