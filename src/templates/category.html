@@ -33,20 +33,23 @@
     
 <div class="row"> 
     <!--for every shoe in the list of shoes, does the current shoe match the category given? If it does, display in in a sexy format, if not, skip it and check the next one -->
-    {% for shoe in shoes %}
+    {% set loopCount = 0 %}
+    {% for shoe in shoes -%}
         {% if shoes[shoe]['category'] == category %}
+        {{ loopCount }}
             <div class='col-xs-6 col-sm-4'>
                 <div class='card-wrapper'>
                     <div class='card'>
-                        <img class='img-responsive img-card' src='http://demandware.edgesuite.net/sits_pod22/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwda7466d3/images/hi-res/M9166C_standard.png'>
+                        <img class='img-responsive img-card' src='../static/img/shoes/{{shoes[shoe]['background-img']}}'>
                     </div>
                     <div class='card-footer'>
-                        <a href="/shoe/{{category}}/{{ shoes[shoe]['name'] }} ">{{ shoes[shoe]['name'] }}</a>
+                        <a href="/shoe/{{category}}/{{ shoes[shoe]['tag']}} ">{{ shoes[shoe]['name'] }}</a>
                     </div>
                 </div>
             </div>
+            {% set loopCount = loopCount + 1%}
         {%endif %}
-    {% endfor %}
+    {%- endfor %}
 </div>
     </div><!--/container -->
 </section>
