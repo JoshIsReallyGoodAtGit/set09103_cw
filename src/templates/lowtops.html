@@ -5,15 +5,16 @@
         <div class='row'>
             <div class='col-xs-12'>
                 <h1 class='section-heading'>
-                    Lowtops[.html]
+                    All {{ category }} Shoes
                 </h1>
             </div>
         </div>
+    
 
-        <div class='row p-t-2'>
-            <div class='col-xs-12 col-sm-6 text-center'>
-                <form action=' class='form-inline'>
-                    <div class='form-group'>
+<div class='row p-t-2'>
+    <div class='col-xs-12 col-sm-6 text-center'>
+        <form action='' class='form-inline'>
+             <div class='form-group'>
                         <label for='sort'>Sort By:
                         </label>
                         <select id='sort' class='form-control'>
@@ -27,73 +28,26 @@
                         </a>
                     </div>
                 </form>
-            </div><!--sort by form -->
+            </div>
         </div>
-
-        <div class='row p-t-1'>
+    
+<div class="row"> 
+    <!--for every shoe in the list of shoes, does the current shoe match the category given? If it does, display in in a sexy format, if not, skip it and check the next one -->
+    {% for shoe in shoes %}
+        {% if shoes[shoe]['category'] == category %}
             <div class='col-xs-6 col-sm-4'>
                 <div class='card-wrapper'>
                     <div class='card'>
                         <img class='img-responsive img-card' src='http://demandware.edgesuite.net/sits_pod22/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwda7466d3/images/hi-res/M9166C_standard.png'>
                     </div>
                     <div class='card-footer'>
-                        <a href='/shoe/id=0'>Shoe 1</a>
+                        <a href="/shoe/{{category}}/{{ shoes[shoe]['name'] }} ">{{ shoes[shoe]['name'] }}</a>
                     </div>
                 </div>
             </div>
-            <div class='col-xs-6 col-sm-4'>
-                <div class='card-wrapper'>
-                    <div class='card'>
-                        <img class='img-responsive img-card' src='http://demandware.edgesuite.net/aalw_prd/on/demandware.static/-/Sites-ConverseMaster/default/dw9097c3cf/images/hi-res/M9160C_standard.png?sw=580&sh=580&sm=fit'>
-                    </div>
-                    <div class='card-footer'>
-                        <a href='/shoe/id=1'>Shoe 2</a>
-                    </div>
-                </div>
-            </div>
-            <div class='col-xs-6 col-sm-4'>
-                <div class='card-wrapper'>
-                    <div class='card'>
-                        <img class='img-responsive img-card' src='http://demandware.edgesuite.net/aalw_prd/on/demandware.static/-/Sites-ConverseMaster/default/dw102836f6/images/hi-res/153568C_standard.jpg?sw=580&sh=580&sm=fit'>
-                    </div>
-                    <div class='card-footer'>
-                        <a href='/shoe/id=2'>Shoe 3</a>
-                    </div>
-                </div>
-            </div>
-            <div class='col-xs-6 col-sm-4'>
-                <div class='card-wrapper'>
-                    <div class='card'>
-                        <img class='img-responsive img-card' src='http://demandware.edgesuite.net/aalw_prd/on/demandware.static/-/Sites-ConverseMaster/default/dw26392fbd/images/hi-res/554863C_standard.jpg?sw=580&sh=580&sm=fit'>
-                    </div>
-                    <div class='card-footer'>
-                        <a href='/shoe/id=3'>Shoe 4</a>
-                    </div>
-                </div>
-            </div>
-            <div class='col-xs-6 col-sm-4'>
-                <div class='card-wrapper'>
-                    <div class='card'>
-                        <img class='img-responsive img-card' src='http://demandware.edgesuite.net/aalw_prd/on/demandware.static/-/Sites-ConverseMaster/default/dwc7971d26/images/hi-res/153477C_standard.jpg?sw=580&sh=580&sm=fit'>
-                    </div>
-                    <div class='card-footer'>
-                        <a href='/shoe/id=4'>Shoe 5</a>
-                    </div>
-                </div>
-            </div>
-            <div class='col-xs-6 col-sm-4'>
-                <div class='card-wrapper'>
-                    <div class='card'>
-                        <img class='img-responsive img-card' src='http://demandware.edgesuite.net/aalw_prd/on/demandware.static/-/Sites-ConverseMaster/default/dw03335a42/images/hi-res/553345C_standard.jpg?sw=580&sh=580&sm=fit'>
-                    </div>
-                    <div class='card-footer'>
-                        <a href='/shoe/id=5'>Shoe 6</a>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div><!--/row-->
-    </div>
+        {%endif %}
+    {% endfor %}
+</div>
+    </div><!--/container -->
 </section>
 {% endblock %}}
