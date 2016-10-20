@@ -6,7 +6,7 @@ app = Flask("__name__")
 def loadIndex():
 	return render_template('index.html')
 
-@app.route("/browse")
+@app.route("/browse/")
 def loadBrowse():
 	#feature idea: load one of the shoes from each category here, instead of hard-coding them
 	return render_template('all-shoes.html')
@@ -24,15 +24,14 @@ def loadShoeFromJson(category = None, shoeID = None):
     #load the json file for manipulation
     with open('shoes.json', 'r') as jsonData:
         shoes = json.load(jsonData)
-        
-    name = shoes[shoeID]['name']
     
     for shoe in shoes:
-        if shoes[shoeID]['name'] == null:
+        if shoes[shoeID]['name'] == "":
             def force404():
                 abort(404)
                 
-                return render_template('shoe-detail.html', category = category, name=name, shoes = shoes)
+    name = shoes[shoeID]['name']
+    return render_template('shoe-detail.html', category = category, name=name, shoes = shoes)
 
 
 
