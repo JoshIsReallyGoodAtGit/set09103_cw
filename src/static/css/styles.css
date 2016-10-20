@@ -137,15 +137,6 @@ a{
 	margin-bottom: 0;
 }
 
-.jumbotron{
-	padding: 9% 0 4% 4%;
-	background: url('http://demandware.edgesuite.net/aalw_prd/on/demandware.static/-/Sites-ConverseMaster/default/dwc94fb1d4/images/hi-res/M7650C_standard.png');
-	background-position: bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-bottom: 4px solid #A3323B;
-}
-
 #shoeID{
 	padding: 5%;
 }
@@ -157,7 +148,8 @@ a{
 }
 
 /*available colours panel*/
-.black-cs, .white-cs, .red-cs, .navy-cs{
+/*really cool css selector. every div class that ends in -cs, give it these styles */
+div[class$='-cs']{
 	padding: 5%;
 	margin: 2%;
 }
@@ -167,11 +159,26 @@ a{
 .white-cs{
 	background: #ECECF0;
 }
+.off-white-cs{
+    background: #F9F8D9;
+}
 .red-cs{
 	background: #A3323B;
 }
 .navy-cs{
 	background: #424F59;
+}
+.true-navy-cs{
+    background: #424F59;
+}
+.brown-cs{
+    background: #825A10;
+}
+.black-print-cs{
+    background: #000;
+}
+.white-red-navy-cs{
+    background: #A3323B;
 }
 .cs-label{
 	text-transform: uppercase;
