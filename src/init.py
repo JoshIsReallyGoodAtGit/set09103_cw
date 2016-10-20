@@ -9,7 +9,20 @@ def loadIndex():
 @app.route("/browse/")
 def loadBrowse():
 	#feature idea: load one of the shoes from each category here, instead of hard-coding them
-	return render_template('all-shoes.html')
+        
+        #take one shoe from each category and send 'em to all-shoes.html
+        with open('shoes.json', 'r') as jsonFile:
+                shoes = json.load(jsonFile)
+        target1 = "1"
+        target2 = "8"
+        
+        firstShoeCat = shoes[target1]['category']
+        firstShoeImg = shoes[target1]['background-img']
+        
+        secondShoeCat = shoes[target2]['category']
+        secondShoeImg = shoes[target2]['background-img']
+        
+	return render_template('all-shoes.html', firstShoeCat = firstShoeCat, secondShoeCat = secondShoeCat, firstShoeImg = firstShoeImg, secondShoeImg = secondShoeImg, shoes=shoes)
 
     
 @app.route("/browse/<category>")
@@ -18,18 +31,14 @@ def loadSpecificCategory(category = None):
 		shoes = json.load(jsonDataFile)
         return render_template('category.html', category = category, shoes = shoes)
         
+        
 @app.route("/shoe/<category>/<shoeID>")
 def loadShoeFromJson(category = None, shoeID = None):
 
     #load the json file for manipulation
     with open('shoes.json', 'r') as jsonData:
         shoes = json.load(jsonData)
-    
-    for shoe in shoes:
-        if shoes[shoeID]['name'] == "":
-            def force404():
-                abort(404)
-                
+        
     name = shoes[shoeID]['name']
     return render_template('shoe-detail.html', category = category, name=name, shoes = shoes)
 
