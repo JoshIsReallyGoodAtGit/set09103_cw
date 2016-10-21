@@ -1,6 +1,6 @@
 {
 	"0": {
-		"tag": 0,
+		"tag": "0",
                 "name": "Chuck Taylor All Star Classic Colours",
 		"category": "Low Top",
 		"size-1": "3",
@@ -16,7 +16,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"1": {
-		"tag": 1,
+		"tag": "1",
                 "name": "Chuck Taylor All Star ‘70",
 		"category": "Low Top",
 		"size-1": "5",
@@ -32,7 +32,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"2": {
-		"tag": 2,
+		"tag": "2",
                 "name": "Jack Purcell Signature",
 		"category": "Low Top",
 		"size-1": "5",
@@ -48,7 +48,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"3": {
-		"tag": 3,
+		"tag": "3",
                 "name": "Chuck II",
 		"category": "Low Top",
 		"size-1": "5",
@@ -64,7 +64,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"4": {
-		"tag": 4,
+		"tag": "4",
                 "name": "Chuck II Shield Canvas",
 		"category": "Low Top",
 		"size-1": "5",
@@ -80,7 +80,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"5": {
-		"tag": 5,
+		"tag": "5",
                 "name": "Cons One Star Pro Suede",
 		"category": "Low Top",
 		"size-1": "5",
@@ -96,7 +96,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"6": {
-		"tag": 6,
+		"tag": "6",
                 "name": "Chuck Taylor All Star Classic Colours",
 		"category": "High Top",
 		"size-1": "3",
@@ -112,7 +112,7 @@
 		"desc": " The All Stars were made by basketball player, Chuck Taylor. These shoes are iconic. You wear them to work, kick back in, you define them. The original and best Converse shoe ever made. "
 	},
 	"7": {
-		"tag": 7,
+		"tag": "7",
                 "name": "Chuck II High Top",
 		"category": "High Top",
 		"size-1": "3",
@@ -128,7 +128,7 @@
 		"desc": " The Chuck II High Top is the High Top variant of the classic Low Top Shoe. Still cool. Always cool. "
 	},
 	"8": {
-		"tag": 8,
+		"tag": "8",
                 "name": "Chuck II Boot",
 		"category": "High Top",
 		"size-1": "3",
@@ -144,7 +144,7 @@
 		"desc": " The Chuck II Boot is the leather variant of the Chuck Taylor All Star Classic High Top. "
 	},
 	"9": {
-	   	"tag": 9,
+	   	"tag": "9",
                 "name": "Chuck II Spacer Mesh",
 		"category": "High Top",
 		"size-1": "3",
@@ -160,7 +160,7 @@
 		"desc": " The Chuck Taylor All Star II Spacer Mesh features a new material update sure to catch some attention. The two-toned, breathable spacer mesh delivers a rich, eye-catching aesthetic. The Nike Lunarlon insole provides excellent cushioning, and the super soft micro suede lining and padded non-slip tongue up the comfort level even more.. "
 	},
 	"10": {
-		"tag": 10,
+		"tag": "10",
                 "name": "Chuck Taylor Stars & Bars",
 		"category": "High Top",
 		"size-1": "3",
@@ -173,22 +173,166 @@
 			"colour-4": "null"
 		},
 		"lead-desc": "'Murica.",
-		"desc": "Celebrate Independance Day in style. Show everyone just how American-obssessed you are with these High Tops even Abraham Lincoln would be proud of. F*** Yeah!"
+		"desc": "Celebrate Independance Day in style. Show everyone just how American-obssessed you are with High Tops even Abraham Lincoln would be proud of. F*** Yeah!"
 	},
 	"11": {
-		"tag": 11,
+		"tag": "11",
                 "name": "Chuck Taylor All Star '70 x DC Comics Batman",
 		"category": "High Top",
 		"size-1": "3",
 		"size-2": "13",
 		"background-img": "11-bg.jpg",
 		"colours": {
-			"colour-1": "Black",
-			"colour-2": "Black-Print",
+			"colour-1": "black",
+			"colour-2": "black-print",
 			"colour-3": "null",
 			"colour-4": "null"
 		},
 		"lead-desc": "POW!",
 		"desc": "DC Comics and Converse are celebrating the 30th anniversary of the landmark comic book by Frank Miller, The Dark Knight Returns, with the Chuck Taylor All Star ‘70 x DC Comics Batman Collection. The premium canvas upper, see-through ice outsole, and sockliner capture various artwork from the Batman comic archives over the last 77 years. Special detailing includes an embossed leather Batman logo and Chuck Patch, and a rubber, glow-in-the-dark collectible hangtag."
+	},
+    "12": {
+		"tag": "12",
+                "name": "Chuck II Shield Canvas Boot",
+		"category": "Boot",
+		"size-1": "3",
+		"size-2": "13",
+		"background-img": "12-bg.jpg",
+		"colours": {
+			"colour-1": "red",
+			"colour-2": "black",
+			"colour-3": "green",
+			"colour-4": "navy"
+		},
+		"lead-desc": "Our Best Outdoor Footwear",
+		"desc": "The Converse Chuck Taylor All Star II Shield Canvas Boot defies the elements with a water-resistant upper and inner sleeve. Counter Climate technology repels water while the Shield Canvas upper provides weather resistance in inclement weather. Other features include a Nike Lunarlon insole for cushioning, a water-resistant inner sleeve that helps keep out rain, a rugged rubber outsole for superb traction, and a Neoprene collar that enhances warmth and comfort. "
+	},
+     "13": {
+		"tag": "13",
+                "name": "Chuck Taylor All Star Tekoa Boot ",
+		"category": "Boot",
+		"size-1": "3",
+		"size-2": "10",
+		"background-img": "13-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Rain Boots That Dont Look Like Rain Boots",
+		"desc": " The Converse Chuck Taylor All Star Tekoa Boot is made to battle the elements. The Tekoa features a translucent canvas-backed rubber upper to repel the water and wind without looking like a rain boot. Complete with a gusseted tongue to keep out the rain, heat barrier lining for added warmth and reflective webbing for increased visibility, the Tekoa keeps you dry and warm while upholding the Converse look that you love. "
+	},
+    "14": {
+		"tag": "14",
+                "name": "Chuck II Boot ",
+		"category": "Boot",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "14-bg.jpg",
+		"colours": {
+			"colour-1": "brown",
+			"colour-2": "black",
+			"colour-3": "white",
+			"colour-4": "null"
+		},
+		"lead-desc": "Epic Boots.",
+		"desc": " The Chuck II Boot is the leather variant of the Chuck Taylor All Star Classic High Top.  "
+	},
+    "15": {
+		"tag": "15",
+                "name": "Chuck Taylor All Star Street Hiker",
+		"category": "Boot",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "15-bg.jpg",
+		"colours": {
+			"colour-1": "brown",
+			"colour-2": "black",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Wear Them Anywhere",
+		"desc": "These versatile boots can be worn anywhere. On the street, or up a mountain. You'll look good and be comfortable anywhere."
+	},
+    "16": {
+		"tag": "16",
+                "name": "Chuck Taylor All Star High-Rise Suede Boot",
+		"category": "Boot",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "16-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Big Ol' Boots",
+		"desc":  "Built for cold days, the Converse Chuck Taylor All Star High-Rise Suede Boot is a feminine super-high take on an iconic silhouette. With a suede upper and shearling interior, it's a durable sneaker boot made for rougher days. "
+	},
+     "17": {
+		"tag": "17",
+                "name": "Chuck Taylor All Star Converse Boot PC Yth/Jr ",
+		"category": "Boot",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "17-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "red",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Big Boots for Little Feet",
+		"desc":  "The Converse Chuck Taylor All Star Converse Boot PC is an all-purpose sneaker boot that combines style, function and durability. Made from weatherised materials and featuring a padded collar and lining for comfort, it provides the right amount of layering to make sure your little one stays warm and dry in wet and cold weather. "
+	},
+    "18": {
+		"tag": "18",
+                "name": "Chuck II Open Knit",
+		"category": "limited-edition",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "18-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "red",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Walkin' in Rio",
+		"desc":  "The Chuck Taylor All Star II Open Knit is our celebration of Brazil and Summer. Inspired by the beaches of Rio, this Chuck II features an updated open knit upper for breathability with a mesh lining around the collar for comfort. The sneaker has a fuse eye row that provides support and durability without the added weight, adding to its on-the-go appeal while staying true to existing Chuck II features like Nike Lunarlon insole cushioning. With bold colors inspired by the beautiful landscapes of Brazil and an extra set of multicolor laces, the Chuck Taylor All Star II Open Knit is a celebration of the beach life.  "
+	},
+      "19": {
+		"tag": "19",
+                "name": "Chuck II Futura Skyfall",
+		"category": "limited-edition",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "19-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Two-Tone Awesome-Ness",
+		"desc":  "Converse and famed graffiti artist, Futura, have joined forces for another collaboration featuring the Chuck II. This collection takes Chuck II's technological advances a step further by adding a reflective upper adorned with the artist's original artwork, titled 'Skyfall'. It's created using a unique graffiti technique, generating an optical illusion that looks as if the sky is falling. They also come with two-toned reflective laces and varnished midsoles.  "
+	},
+    "20": {
+		"tag": "20",
+                "name": "Converse x PatBo Chuck Taylor All Star",
+		"category": "limited-edition",
+		"size-1": "8",
+		"size-2": "10",
+		"background-img": "20-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Stylish Crossover",
+		"desc":  "Converse has collaborated with celebrated Sao Paulo fashion label, PatBo to deliver an exciting, limited edition, fashion-forward sneaker. Moulded flowers with gold studs have been applied to our iconic Chuck Taylor silhouette, and are combined with fun, eye-catching details like a pink outsole and shiny gold aglets. The internal lace-up construction keeps admirers’ focus on the beautiful design. "
 	}
 }
