@@ -1,4 +1,4 @@
-from flask import Flask, render_template, json
+from flask import Flask, render_template, json, request
 
 app = Flask("__name__")
 
@@ -34,13 +34,22 @@ def loadBrowse():
 	return render_template('all-shoes.html', shoe1Img = shoe1Img, shoe2Img = shoe2Img, shoe3Img = shoe3Img, shoe4Img = shoe4Img, shoe5Img = shoe5Img, shoe6Img = shoe6Img, shoes=shoes)
 
     
-    
-@app.route("/browse/<category>")
-def loadSpecificCategory(category = None):
-	with open ('shoes.json', 'r') as jsonFile:
-		shoes = json.load(jsonFile)
+                                                                            #add GET too, otherwise we won't be able to access the page at all!
+@app.route("/browse/<category>", methods=['POST', 'GET'])
+#if the user posted something, i.e. the sort criteria
+def checkUserPosted(category = None):
+    if request.method == 'POST':
+        sortCriteria = request.form['sort']
+        with open('shoes.json', 'r') as jsonFile:
+            shoes = json.load(jsonFile)
+            
+            #return render_template('category.html', sortCriteria = sortCriteria, shoes = shoes)
+    #otherwise, just display the page without any sorting
+    else:
+        def loadBrowse(category = None):
+           with open ('shoes.json', 'r') as jsonFile:
+                shoes = json.load(jsonFile)
                 
-        #same as before, only less complex
         return render_template('category.html', category = category, shoes = shoes)
         
         
