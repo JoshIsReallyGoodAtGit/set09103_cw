@@ -15,14 +15,13 @@ def loadBrowse():
                 shoes = json.load(jsonFile)
         target1 = "1"
         target2 = "8"
+        target3 = "12"
         
-        firstShoeCat = shoes[target1]['category']
-        firstShoeImg = shoes[target1]['background-img']
+        shoe1Img = shoes[target1]['background-img']
+        shoe2Img = shoes[target2]['background-img']
+        shoe3Img = shoes[target3]['background-img']
         
-        secondShoeCat = shoes[target2]['category']
-        secondShoeImg = shoes[target2]['background-img']
-        
-	return render_template('all-shoes.html', firstShoeCat = firstShoeCat, secondShoeCat = secondShoeCat, firstShoeImg = firstShoeImg, secondShoeImg = secondShoeImg, shoes=shoes)
+	return render_template('all-shoes.html', shoe1Img = shoe1Img, shoe2Img = shoe2Img, shoe3Img = shoe3Img, shoes=shoes)
 
     
 @app.route("/browse/<category>")
