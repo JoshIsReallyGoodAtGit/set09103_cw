@@ -1,0 +1,21 @@
+ #now we've got the json file, get the exact values for the Shoe
+    #shoe name
+    ShoeName = shoeData[shoeID]['name']
+    shoeNameHandler = {'shoeName': ShoeName}
+    
+    #shoe colours
+    coloursAvailable = shoeData[shoeID]['colours']
+    shoeColourHandler = {'colours': coloursAvailable}
+
+    #size range
+    #first size
+    sizeRange1 = shoeData[shoeID]['size-1']
+    sizeRange1Handler = {'size1': sizeRange1}	
+
+   #last size
+    sizeRange2 = shoeData[shoeID]['size-2']
+    sizeRange2Handler = {'size2': sizeRange2}
+    #end size range
+    
+    
+    shoe = shoeNameHandler, colour = shoeColourHandler, size1 = sizeRange1Handler, size2 = sizeRange2Handler

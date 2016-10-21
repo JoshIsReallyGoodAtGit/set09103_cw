@@ -17,13 +17,15 @@ def loadBrowse():
         target2 = "8"
         target3 = "12"
         target4 = "19"
+        target5 = "23"
         
         shoe1Img = shoes[target1]['background-img']
         shoe2Img = shoes[target2]['background-img']
         shoe3Img = shoes[target3]['background-img']
         shoe4Img = shoes[target4]['background-img']
+        shoe5Img = shoes[target5]['background-img']
         
-	return render_template('all-shoes.html', shoe1Img = shoe1Img, shoe2Img = shoe2Img, shoe3Img = shoe3Img, shoe4Img = shoe4Img, shoes=shoes)
+	return render_template('all-shoes.html', shoe1Img = shoe1Img, shoe2Img = shoe2Img, shoe3Img = shoe3Img, shoe4Img = shoe4Img, shoe5Img = shoe5Img, shoes=shoes)
 
     
 @app.route("/browse/<category>")

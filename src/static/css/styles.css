@@ -180,6 +180,15 @@ div[class$='-cs']{
 .white-red-navy-cs{
     background: #A3323B;
 }
+.orange-cs{
+    background: #FD2000;
+}
+.yellow-cs{
+    background: #FFEB11;
+}
+.green-cs{
+    background: #00FF61;
+}
 .cs-label{
 	text-transform: uppercase;
 	text-align: center;

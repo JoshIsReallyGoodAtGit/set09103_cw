@@ -334,5 +334,117 @@
 		},
 		"lead-desc": "Stylish Crossover",
 		"desc":  "Converse has collaborated with celebrated Sao Paulo fashion label, PatBo to deliver an exciting, limited edition, fashion-forward sneaker. Moulded flowers with gold studs have been applied to our iconic Chuck Taylor silhouette, and are combined with fun, eye-catching details like a pink outsole and shiny gold aglets. The internal lace-up construction keeps admirers’ focus on the beautiful design. "
+	},
+     "21": {
+		"tag": "21",
+                "name": "CONS One Star Pro Suede",
+		"category": "skate",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "21-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Skate Shoes Remastered",
+		"desc":  "The One Star sneaker was embraced by the '90s alternative culture when street and skate came together. Today, we re-mastered this classic to create the Converse CONS One Star Pro Suede sneaker while continuing to preserve its iconic look. It’s been crafted with highly durable, premium suede, while a moulded Nike Lunarlon insole delivers lightweight impact cushioning and a superior fit. Plus, the lightweight CONS traction rubber provides additional durability and grip. "
+	},
+     "22": {
+		"tag": "22",
+                "name": "CONS Star Player Suede",
+		"category": "skate",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "22-bg.jpg",
+		"colours": {
+			"colour-1": "black",
+			"colour-2": "null",
+			"colour-3": "null",
+			"colour-4": "null"
+		},
+		"lead-desc": "Original And Still Best",
+		"desc":  "The Converse CONS Star Player Premium Suede is a skate staple made with the finest materials. This sneaker features a durable suede upper and the same look you've always loved.  "
+	},
+     "23": {
+		"tag": "23",
+                "name": "CONS CTAS Pro Ripstop",
+		"category": "skate",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "23-bg.jpg",
+		"colours": {
+			"colour-1": "orange",
+			"colour-2": "red",
+			"colour-3": "yellow",
+			"colour-4": "null"
+		},
+		"lead-desc": "Skate Shoes Remastered",
+		"desc":  "The Converse CONS CTAS Pro Ripstop takes the iconic look of the Chuck Taylor All Star and equips it with the street skating toughness CONS sneakers are known for. It’s constructed of a strong, lightweight ripstop fabric that’s also used in hot air balloons and parachutes, making it perfect for the warmer months. It also has a Lunarlon sockliner for comfort and cushioning, CONS traction rubber for grip, and a snug gusseted tongue for added comfort. "
+	},
+    "24": {
+		"tag": "24",
+                "name": "CONS Star Player",
+		"category": "skate",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "24-bg.jpg",
+		"colours": {
+			"colour-1": "navy",
+			"colour-2": "white",
+			"colour-3": "red",
+			"colour-4": "null"
+		},
+		"lead-desc": "Skate Shoes Remastered",
+		"desc":  "The Converse CONS Star Player is a skate mainstay that never disappoints. Featuring a canvas upper and the same look you've always loved, it's ready for anything."
+	},
+     "25": {
+		"tag": "25",
+                "name": "CONS One Star Pro Suede",
+		"category": "skate",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "25-bg.jpg",
+		"colours": {
+			"colour-1": "navy",
+			"colour-2": "null",
+			"colour-3": "red",
+			"colour-4": "null"
+		},
+		"lead-desc": "Skate Shoes Remastered",
+		"desc":  "The Converse CONS Star Player is a skate mainstay that never disappoints. Featuring a canvas upper and the same look you've always loved, it's ready for anything."
+	},
+       "26": {
+		"tag": "26",
+                "name": "Chuck Taylor All Star Metallic ",
+		"category": "metallic",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "26-bg.jpg",
+		"colours": {
+			"colour-1": "gunmetal",
+			"colour-2": "black",
+			"colour-3": "white",
+			"colour-4": "null"
+		},
+		"lead-desc": "Ooh. Shiny.",
+		"desc":  "The Converse Chuck Taylor All Star is the most iconic sneaker in the world, and this pair takes it to the next level with a cool metallic finish in seasonally-appropriate colours. As always, there's the unmistakable silhouette, star-centred ankle patch and vulcanised rubber sole.."
+	},
+    "27": {
+		"tag": "27",
+                "name": "Chuck Taylor All Star Metallic",
+		"category": "metallic",
+		"size-1": "4",
+		"size-2": "12",
+		"background-img": "27-bg.jpg",
+		"colours": {
+			"colour-1": "gunmetal",
+			"colour-2": "black",
+			"colour-3": "white",
+			"colour-4": "null"
+		},
+		"lead-desc": "Ooh. Shiny.",
+		"desc":  "The Converse Chuck Taylor All Star is the most iconic sneaker in the world, and this pair takes it to the next level with a cool metallic finish in seasonally-appropriate colours. As always, there's the unmistakable silhouette, star-centred ankle patch and vulcanised rubber sole.."
 	}
 }
