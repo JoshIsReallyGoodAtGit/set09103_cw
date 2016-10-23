@@ -1,4 +1,4 @@
-from flask import Flask, render_template, json, request
+from flask import Flask, render_template, json, request, redirect
 
 app = Flask("__name__")
 
@@ -37,20 +37,19 @@ def loadBrowse():
                                                                             #add GET too, otherwise we won't be able to access the page at all!
 @app.route("/browse/<category>", methods=['POST', 'GET'])
 #if the user posted something, i.e. the sort criteria
-def checkUserPosted(category = None):
-    if request.method == 'POST':
-        sortCriteria = request.form['sort']
-        with open('shoes.json', 'r') as jsonFile:
-            shoes = json.load(jsonFile)
+def checkUserPosted(category = None, shoes = None):
+    with open('shoes.json', 'r') as jsonFile:
+        shoes = json.load(jsonFile)
             
-            #return render_template('category.html', sortCriteria = sortCriteria, shoes = shoes)
-    #otherwise, just display the page without any sorting
+    if request.method == 'POST':
+        #if the page was loaded via POST,  i.e. the user submitted the sort form, reload the page with the criteria
+        sortCriteria = request.form['sort']
+        return render_template('category.html', sortCriteria = sortCriteria, shoes = shoes, category = category)
+    #otherwise, just default to sort via Shoe Name
     else:
-        def loadBrowse(category = None):
-           with open ('shoes.json', 'r') as jsonFile:
-                shoes = json.load(jsonFile)
-                
-        return render_template('category.html', category = category, shoes = shoes)
+        sortCriteria = "Name"
+        return render_template('category.html', sortCriteria = sortCriteria, category = category, shoes = shoes)
+        #return render_template('category.html', category = category, shoes = shoes)
         
         
         
