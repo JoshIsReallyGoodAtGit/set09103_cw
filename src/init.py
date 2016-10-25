@@ -35,21 +35,15 @@ def loadBrowse():
 
     
                                                                             #add GET too, otherwise we won't be able to access the page at all!
-@app.route("/browse/<category>", methods=['POST', 'GET'])
+@app.route("/browse/<category>")
 #if the user posted something, i.e. the sort criteria
-def checkUserPosted(category = None, shoes = None):
+def loadSpecificCategory(category = None, shoes = None):
+    category = "Low Top"
     with open('shoes.json', 'r') as jsonFile:
         shoes = json.load(jsonFile)
-            
-    if request.method == 'POST':
-        #if the page was loaded via POST,  i.e. the user submitted the sort form, reload the page with the criteria
-        sortCriteria = request.form['sort']
-        return render_template('category.html', sortCriteria = sortCriteria, shoes = shoes, category = category)
-    #otherwise, just default to sort via Shoe Name
-    else:
-        sortCriteria = "Name"
-        return render_template('category.html', sortCriteria = sortCriteria, category = category, shoes = shoes)
-        #return render_template('category.html', category = category, shoes = shoes)
+    
+        return render_template('category.html', shoes = shoes, category = category)
+   
         
         
         
