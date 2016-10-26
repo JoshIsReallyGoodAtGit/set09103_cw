@@ -78,7 +78,7 @@ a{
 
 #index-main{
     height: 85vh;
-    background: url('https://c1.staticflickr.com/5/4095/4790509812_a11c2c1b09_b.jpg') #424F59;
+    background: url(/static/img/header-img.jpg) #424F59;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
