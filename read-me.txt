@@ -1,0 +1,1 @@
+Just do 'python app.py' in the terminal/bash/putty/whatever you use to run scripts, and visit localhost:5000/ to start.
