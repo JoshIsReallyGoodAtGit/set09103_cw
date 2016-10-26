@@ -1,9 +1,0 @@
-global to do list
-
-1. pass over all the data to shoe-detail.html           DONE
-2. use a for loop for all-shoes.html (three hours)              IN PROGRESS
-3. implement some sort of sort feature (three/four hours) 
-4. add the rest of the images etc to shoes.json (hour)
-5. add some sort of backend, with database and password encryption (ahahahah)
-6. use url_for and redirect (two hours tops)
-7. implement favicon and tidy up css rules, maybe enhance some? (two hours?)
