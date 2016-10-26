@@ -1,4 +1,4 @@
-from flask import Flask, render_template, json, request, redirect
+from flask import Flask, render_template, json
 
 app = Flask("__name__")
 
@@ -20,7 +20,7 @@ def loadBrowse():
         target3 = "12"
         target4 = "19"
         target5 = "23"
-        target6 = "26"
+        target6 = "27"
         
         #now take the thumbnail of each shoe and send it to shoe-detail.html
         shoe1Img = shoes[target1]['background-img']
@@ -33,20 +33,15 @@ def loadBrowse():
         #return the template
 	return render_template('all-shoes.html', shoe1Img = shoe1Img, shoe2Img = shoe2Img, shoe3Img = shoe3Img, shoe4Img = shoe4Img, shoe5Img = shoe5Img, shoe6Img = shoe6Img, shoes=shoes)
 
-    
-                                                                            #add GET too, otherwise we won't be able to access the page at all!
+
 @app.route("/browse/<category>")
-#if the user posted something, i.e. the sort criteria
 def loadSpecificCategory(category = None, shoes = None):
-    category = "Low Top"
     with open('shoes.json', 'r') as jsonFile:
         shoes = json.load(jsonFile)
     
         return render_template('category.html', shoes = shoes, category = category)
    
-        
-        
-        
+
 @app.route("/shoe/<category>/<shoeID>")
 def loadShoeFromJson(category = None, shoeID = None):
     #load the json file for manipulation
@@ -65,8 +60,7 @@ def uhOh(error):
         #if the user lands on a page that doesn't exist, give them this error so they can be on their way.
 	return render_template('404.html'), 404
 
+
 #used to run the app
-
-
 if __name__ == "__main__":
 	app.run(host='0.0.0.0',debug=True)
